@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Pulse</title>
 </head>
 <body>
-    <input id="searchInput" type="text" placeholder="Search news..." />
 
-    <button class="cat-btn active" data-cat="all">All</button>
-    <button class="cat-btn" data-cat="ai">AI</button>
-    <button class="cat-btn" data-cat="crypto">Crypto</button>
-    <button class="cat-btn" data-cat="gadgets">Gadgets</button>
+  <header>
+    <div class="header-top">
+      <h1>Tech News Pulse</h1>
+      <p class="subtitle">Latest in Technology & Startups</p>
+    </div>
+    <input id="searchInput" type="text" placeholder="🔍 Search news..." />
+    <div class="filter-row">
+      <button class="cat-btn active" data-cat="all">All</button>
+      <button class="cat-btn" data-cat="ai">🤖 AI</button>
+      <button class="cat-btn" data-cat="crypto">₿ Crypto</button>
+      <button class="cat-btn" data-cat="gadgets">📱 Gadgets</button>
+    </div>
+  </header>
 
-<div id="main" style="display:flex; flex-wrap:wrap;"></div>
-    <div id="main" style="display:flex; flex-wrap:wrap; padding:16px";></div>
-    <script src="index.js"></script>
+  <div id="main"></div>
+
+  <script src="index.js"></script>
 </body>
 </html>
